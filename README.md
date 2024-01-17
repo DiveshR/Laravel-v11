@@ -15,3 +15,5 @@ laravel new laravel-V11 --dev
 All configuration files now have framework counterparts and application level configuration is merged with the framework defaults. The default configuration files have also received many more environment variables so that more options can be changed from the application’s `````.env````` file. The LoadConfiguration bootstrap class has been added to support framework configuration cascading. A new ``````php artisan config:publish`````` command has been introduced to publish framework configuration files.
 
 - No files inside config i.e app.php etc
+
+#### Installers
