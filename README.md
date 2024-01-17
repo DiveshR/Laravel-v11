@@ -16,4 +16,18 @@ All configuration files now have framework counterparts and application level co
 
 - No files inside config i.e app.php etc
 
-#### Installers
+#### 2. Installers
+
+No sanctum package and api route bydefault.
+
+A new ````install:api`````` command has been added. This command installs laravel/sanctum and uncomments the “API” routes definition in the bootstrap file.
+
+A new `````install:broadcasting``````` has been added which uncomments the “channels” routes definition in the bootstrap file. In addition, a Laravel Echo file is written to the resources/js directory which contains the Echo configuration. A directive to include this file is injected into the main bootstrap.js file.
+
+#### 3. Service Providers
+
+The ````RegisterProviders`````` bootstrap class has been updated to support the loading of additional providers from the ````bootstrap/providers.php`````` array file.
+
+The `````make:provider`````` command has been updated to add the new service provider to the `````bootstrap/providers.php`````` file if it exists.
+
+The `````ServiceProvider`````` class has received a new static `````addProviderToBootstrapFile````` method that will add a service provider class to the ```bootstrap/providers.php`````` file if it exists.
