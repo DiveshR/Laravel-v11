@@ -2,11 +2,11 @@
 
 
 
-## About Laravel V11
+## About Laravel Version 11
 
 ### Installation
 
 `````
 composer global require laravel/installer
 laravel new laravel-V11 --dev 
-```
+````````
